@@ -8,7 +8,7 @@ RUN yarn build
 FROM nginx:alpine
 WORKDIR /var/www/app
 
-ADD config/default.conf /etc/nginx/conf.d/default.conf
+ADD conf/default.conf /etc/nginx/conf.d/default.conf
 
 COPY --from=build /var/www/app/build /var/www/app
 
