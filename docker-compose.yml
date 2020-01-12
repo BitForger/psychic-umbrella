@@ -1,0 +1,21 @@
+version: '3'
+services:
+  web:
+    container_name: acoustic-web
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    env_file: .env
+    ports:
+      - "8080:3000"
+    volumes:
+      - "./src:/var/www/app/src"
+      - "./package.json:/var/www/app/package.json"
+      - "./yarn.lock:/var/www/app/yarn.lock"
+      - "./tsconfig.json:/var/www/app/tsconfig.json"
+    networks:
+      - acoustic
+
+networks:
+  acoustic:
+    external: true
