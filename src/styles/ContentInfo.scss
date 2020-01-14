@@ -1,0 +1,14 @@
+.content-info {
+
+  &.content-info__image-wrapper {
+    max-width: 100%;
+    display: block;
+    position: relative;
+
+    img {
+      position: relative;
+      display: block;
+      width: 100%;
+    }
+  }
+}

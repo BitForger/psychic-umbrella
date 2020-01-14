@@ -1,38 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {Component} from 'react';
 import './App.scss';
-import {Box, Grommet} from "grommet";
-import {Table} from "./components/Table";
+import {Route, BrowserRouter as Router, Switch} from "react-router-dom";
+import {Home} from "./routes/Home";
+import {Details} from "./routes/Details";
+import {Grommet} from "grommet";
 
 const theme = require('./theme.json');
 
-const App: React.FC = () => {
-    return (
-        <div className="App">
-            <Grommet theme={theme}>
-                <header className="App-header">
-                    <img src={logo} className="App-logo" alt="logo"/>
-                    <p>
-                        Edit <code>src/App.tsx</code> and save to reload.
-                    </p>
-                    <a
-                        className="App-link"
-                        href="https://reactjs.org"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        Learn React
-                    </a>
-                </header>
-                <Box
-                    direction="row"
-                    pad="medium"
-                >
-                    <Table />
-                </Box>
-            </Grommet>
-        </div>
-    );
-}
 
-export default App;
+export class App extends Component {
+    history: any;
+
+    render(): React.ReactElement<any, string | React.JSXElementConstructor<any>> | string | number | {} | React.ReactNodeArray | React.ReactPortal | boolean | null | undefined {
+        return <Router>
+            <Grommet theme={theme}>
+                <Switch>
+                    <Route exact path='/'>
+                        <Home/>
+                    </Route>
+                    <Route path="/:id" component={Details}>
+                    </Route>
+                </Switch>
+            </Grommet>
+        </Router>
+    }
+}
