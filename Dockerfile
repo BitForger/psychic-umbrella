@@ -3,6 +3,8 @@ WORKDIR /var/www/app
 
 COPY . /var/www/app
 
+RUN yarn install
+
 RUN yarn build
 
 FROM nginx:alpine

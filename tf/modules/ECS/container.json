@@ -1,0 +1,20 @@
+[
+  {
+    "name": "acoustic-frontend",
+    "image": "508511800738.dkr.ecr.us-east-1.amazonaws.com/acoustic-challenge-frontend:latest",
+    "essential": true,
+    "portMappings": [
+      {
+        "containerPort": 80
+      }
+    ],
+    "logConfiguration": {
+      "logDriver": "awslogs",
+      "options": {
+        "awslogs-group": "/ecs/acoustic-frontend",
+        "awslogs-region": "us-east-1",
+        "awslogs-stream-prefix": "web"
+      }
+    }
+  }
+]
