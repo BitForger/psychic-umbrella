@@ -1,9 +1,17 @@
 .content-info {
 
+  &.content-info__container {
+    display: flex;
+    flex: 1 0 100%;
+    flex-flow: row wrap;
+  }
+
+  &.content-info__title-wrapper {
+    flex: 1 0 100%;
+  }
+
   &.content-info__image-wrapper {
-    max-width: 100%;
-    display: block;
-    position: relative;
+    flex: 1 0 100%;
 
     img {
       position: relative;

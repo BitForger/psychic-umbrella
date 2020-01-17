@@ -9,17 +9,13 @@ const theme = require('./theme.json');
 
 
 export class App extends Component {
-    history: any;
 
     render(): React.ReactElement<any, string | React.JSXElementConstructor<any>> | string | number | {} | React.ReactNodeArray | React.ReactPortal | boolean | null | undefined {
         return <Router>
             <Grommet theme={theme}>
                 <Switch>
-                    <Route exact path='/'>
-                        <Home/>
-                    </Route>
-                    <Route path="/:id" component={Details}>
-                    </Route>
+                    <Route exact path='/' component={Home} />
+                    <Route path="/:id" component={Details} />
                 </Switch>
             </Grommet>
         </Router>

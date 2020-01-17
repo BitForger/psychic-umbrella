@@ -25,9 +25,10 @@ export class Table extends Component<Props, State> {
             loading: true,
         };
 
-        this.isLoading.bind(this);
+        this.isLoading = this.isLoading.bind(this);
     }
 
+    // Define columns and how they should render data in the table
     private columns = [
         {
             property: 'name',
@@ -68,7 +69,6 @@ export class Table extends Component<Props, State> {
     }
 
     render(): React.ReactElement<any, string | React.JSXElementConstructor<any>> | string | number | {} | React.ReactNodeArray | React.ReactPortal | boolean | null | undefined {
-        console.log('state', this.state);
         return <>
             {this.state.loading && <LoadingSection loading={this.isLoading}/>}
             {!this.state.loading && this.state.requestError && <ErrorPanel />}

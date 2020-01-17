@@ -3,14 +3,17 @@ import {RouteComponentProps} from "react-router";
 import {axiosInstance} from "../axios/axiosInstance";
 import {ErrorPanel} from "../components/ErrorPanel";
 import '../styles/ContentInfo.scss';
-import {Box} from "grommet";
+import {Box, Button} from "grommet";
 import {ContentInfo} from "../components/ContentInfo";
 import {Link} from "react-router-dom";
+import {LoadingSection} from "../components/LoadingSection";
+import nanoid from "nanoid";
 
 interface Props extends RouteComponentProps<{id: string}> {
 }
 
 interface State {
+    loading?: boolean;
     requestError?: boolean;
     idInfo?: any;
 }
@@ -21,6 +24,10 @@ export class Details extends Component<Props, State> {
         super(props);
         console.log('props', props);
         this.id = props.match.params.id;
+        this.state = {
+            loading: true,
+        };
+        this.isLoading = this.isLoading.bind(this);
     }
 
     async componentDidMount(): Promise<void> {
@@ -32,19 +39,37 @@ export class Details extends Component<Props, State> {
         } catch (e) {
             requestError = true;
         }
-        console.log('request', request);
 
         this.setState({
             requestError,
-            idInfo: request?.data || false
+            idInfo: request?.data || false,
+            loading: false,
         });
     }
 
     render(): React.ReactElement<any, string | React.JSXElementConstructor<any>> | string | number | {} | React.ReactNodeArray | React.ReactPortal | boolean | null | undefined {
-        return <Box pad='medium' direction="row">
-            <Link to="/">Home</Link>
+        let elems;
+        if (this.state?.idInfo && Array.isArray(this.state?.idInfo)) {
+            elems = [];
+            for (const info of this.state.idInfo) {
+                elems.push(<ContentInfo key={nanoid()} idInfo={info}/>)
+            }
+        } else {
+            elems = <ContentInfo idInfo={this.state?.idInfo}/>
+        }
+        return <Box pad='medium' direction="row" wrap={true}>
+            <Link to="/">
+                <Button label={'Home'} />
+            </Link>
+            {this.state.loading && <LoadingSection loading={this.isLoading} />}
+            {/*Display Error Panel here if there is a request error*/}
             {this.state?.requestError && <ErrorPanel />}
-            {!this.state?.requestError && this.state?.idInfo && <ContentInfo idInfo={this.state.idInfo}/>}
+            {/*Show a returned values*/}
+            {!this.state?.requestError && this.state?.idInfo && elems}
         </Box>
+    }
+
+    isLoading() {
+        return this.state?.loading;
     }
 }
