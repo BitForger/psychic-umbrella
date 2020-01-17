@@ -1,11 +1,18 @@
 [
   {
     "name": "acoustic-frontend",
+    "executionRoleArn": "arn:aws:iam::508511800738:role/ecsTaskExecutionRole",
     "image": "508511800738.dkr.ecr.us-east-1.amazonaws.com/acoustic-challenge-frontend:latest",
     "essential": true,
     "portMappings": [
       {
         "containerPort": 80
+      }
+    ],
+    "secrets": [
+      {
+        "valueFrom": "arn:aws:ssm:us-east-1:508511800738:parameter/acoustic-challenge/api-uri",
+        "name": "REACT_APP_API_URI"
       }
     ],
     "logConfiguration": {

@@ -59,7 +59,7 @@ export class Table extends Component<Props, State> {
             errorFound = true;
         }
         this.setState({
-            tableValues: !errorFound && articles?.data.map((value: {[s: string]: any}) => {
+            tableValues: !errorFound && articles?.data?.map((value: {[s: string]: any}) => {
                 value.key = nanoid();
                 return value;
             }),

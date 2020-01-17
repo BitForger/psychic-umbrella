@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e9fe0f41-4621-4bab-adf9-bb05238d4305" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tf/modules/ECS/container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tf/modules/ECS/load-balancing.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tf/modules/ECS/main.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tf/modules/ECS/task-definition.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tf/production/main.tf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conf/default.conf" beforeDir="false" afterPath="$PROJECT_DIR$/conf/default.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Table.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Table.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tf/modules/ECS/container.json" beforeDir="false" afterPath="$PROJECT_DIR$/tf/modules/ECS/container.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tf/modules/ECS/task-definition.tf" beforeDir="false" afterPath="$PROJECT_DIR$/tf/modules/ECS/task-definition.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +127,7 @@
       <workItem from="1578687045893" duration="183000" />
       <workItem from="1578761394324" duration="55337000" />
       <workItem from="1579278250066" duration="174000" />
-      <workItem from="1579282711299" duration="6015000" />
+      <workItem from="1579282711299" duration="8324000" />
     </task>
     <servers />
   </component>
