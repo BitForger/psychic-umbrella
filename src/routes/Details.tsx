@@ -57,7 +57,7 @@ export class Details extends Component<Props, State> {
         } else {
             elems = <ContentInfo idInfo={this.state?.idInfo}/>
         }
-        return <Box pad='medium' direction="row" wrap={true}>
+        return <Box pad='medium' direction="row" wrap={true} background={'#262a38'}>
             <Link to="/">
                 <Button label={'Home'} />
             </Link>
