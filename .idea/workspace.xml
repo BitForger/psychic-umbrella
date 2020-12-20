@@ -1,13 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="e9fe0f41-4621-4bab-adf9-bb05238d4305" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/discord.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/discord.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ContentInfo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ContentInfo.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/Details.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/Details.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/ContentInfo.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/ContentInfo.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tf/modules/ECS/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/tf/modules/ECS/main.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +53,6 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -46,7 +60,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JSON" />
-    <property name="javascript.nodejs.core.library.configured.version" value="10.16.3" />
+    <property name="javascript.nodejs.core.library.configured.version" value="10.19.0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -103,18 +117,6 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
-  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -129,37 +131,67 @@
       <workItem from="1578761394324" duration="55337000" />
       <workItem from="1579278250066" duration="174000" />
       <workItem from="1579282711299" duration="8627000" />
-      <workItem from="1579472067514" duration="3093000" />
+      <workItem from="1579472067514" duration="3469000" />
+      <workItem from="1580875316830" duration="413000" />
+      <workItem from="1581013115762" duration="2567000" />
+      <workItem from="1581021137775" duration="84000" />
+      <workItem from="1581026589823" duration="89000" />
+      <workItem from="1584317280741" duration="224000" />
+      <workItem from="1584403137943" duration="1319000" />
+      <workItem from="1589079446040" duration="147000" />
+      <workItem from="1589080153475" duration="43000" />
+      <workItem from="1589080537689" duration="4000" />
+      <workItem from="1589080832014" duration="552000" />
+      <workItem from="1589083213131" duration="1110000" />
+      <workItem from="1589745187392" duration="871000" />
+      <workItem from="1590295308292" duration="211000" />
+      <workItem from="1590296165590" duration="631000" />
+      <workItem from="1592623297556" duration="629000" />
+      <workItem from="1592627510316" duration="1771000" />
+      <workItem from="1592677522192" duration="3178000" />
+      <workItem from="1592684349411" duration="1367000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1693" height="408" key="GridCell.Tab.0.bottom" timestamp="1578942272072">
-      <screen x="1680" y="-1223" width="3440" height="1417" />
+    <state x="100" y="100" width="1480" height="850" key="DiffContextDialog" timestamp="1590295519751">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1693" height="408" key="GridCell.Tab.0.bottom/1680.-1223.3440.1417/0.23.1680.1027@1680.-1223.3440.1417" timestamp="1578942272072" />
-    <state width="1693" height="408" key="GridCell.Tab.0.center" timestamp="1578942272070">
-      <screen x="1680" y="-1223" width="3440" height="1417" />
-    </state>
-    <state width="1693" height="408" key="GridCell.Tab.0.center/1680.-1223.3440.1417/0.23.1680.1027@1680.-1223.3440.1417" timestamp="1578942272070" />
-    <state width="1693" height="408" key="GridCell.Tab.0.left" timestamp="1578942272069">
-      <screen x="1680" y="-1223" width="3440" height="1417" />
-    </state>
-    <state width="1693" height="408" key="GridCell.Tab.0.left/1680.-1223.3440.1417/0.23.1680.1027@1680.-1223.3440.1417" timestamp="1578942272069" />
-    <state width="1693" height="408" key="GridCell.Tab.0.right" timestamp="1578942272071">
-      <screen x="1680" y="-1223" width="3440" height="1417" />
-    </state>
-    <state width="1693" height="408" key="GridCell.Tab.0.right/1680.-1223.3440.1417/0.23.1680.1027@1680.-1223.3440.1417" timestamp="1578942272071" />
-    <state x="3777" y="-876" key="SettingsEditor" timestamp="1578777722672">
-      <screen x="1680" y="-1223" width="3440" height="1417" />
-    </state>
-    <state x="3777" y="-876" key="SettingsEditor/1680.-1223.3440.1417/0.23.1680.1027@1680.-1223.3440.1417" timestamp="1578777722672" />
-    <state x="3925" y="-900" width="672" height="678" key="search.everywhere.popup" timestamp="1579018756691">
-      <screen x="1680" y="-1223" width="3440" height="1417" />
-    </state>
-    <state x="3925" y="-900" width="672" height="678" key="search.everywhere.popup/1680.-1223.3440.1417/0.23.1680.1027@1680.-1223.3440.1417" timestamp="1579018756691" />
+    <state x="100" y="100" width="1480" height="850" key="DiffContextDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1590295519751" />
   </component>
 </project>

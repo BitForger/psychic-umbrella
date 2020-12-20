@@ -16,4 +16,3 @@ resource "aws_ecs_service" "frontend" {
   }
   depends_on = [aws_lb_target_group.main]
 }
-
